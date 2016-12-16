@@ -41,6 +41,8 @@ public class ArduinoConnection {
         switch (idConnection) {
             case 1:
             case 2:
+            case 3:
+            case 4:
                 try {
                     cliente = new Socket("192.168.0.6", 1000);
                 } catch (IOException ex) {
@@ -48,8 +50,8 @@ public class ArduinoConnection {
                 }
 
                 break;
-            case 3:
-            case 4:
+            case 5:
+            case 6:
                 try {
                     cliente = new Socket("192.168.0.50", 1000);
                 } catch (IOException ex) {
